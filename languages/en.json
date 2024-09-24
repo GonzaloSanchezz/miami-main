@@ -1,0 +1,86 @@
+{
+    "inicio":{
+        "tituloInicio":"EXPLORE, SAVOR, AND LIVE MIAMI WITH US",
+        "subtituloInicio": "WHERE DREAMS COME TRUE",
+        "languageSelector": "LANGUAGE SELECTOR",
+        "selectorDepartamentos":"DEPARTMENTS",
+        "selectorTransporte":"TRANSFERS"
+    },
+    "departamentos":{
+        "tipo1":"Tipe: Department",
+        "tipo2":"Tipe: Studio",
+        "precio1":"Price: 1000$",
+        "ubicacion1":"Location: Hollywood Beach",
+        "habitaciones1":"Bedrooms: 2",
+        "precio2":"Price: 1000$",
+        "ubicacion2":"Location: Hollywood Beach",
+        "habitaciones2":"Bedrooms: 2",
+        "precio3":"Price: 1000$",
+        "ubicacion3":"Location: Hollywood Beach",
+        "habitaciones3":"Bedrooms: 2",
+        "descripcion1":"Discover your getaway accommodation in Miami Beach: We offer elegant beachfront apartments for vacation rentals. Choose from comfortable studios and spacious 1 and 2 bedroom apartments, all fully furnished and ready to give you an unforgettable stay. Enjoy stunning ocean views, direct beach access, and an unbeatable location to explore the vibrant coastal life. Ideal for a relaxing holiday with all the comfort and style you deserve. Ask us for your quote and we will be there.",
+        "tituloDepartamentos":"DEPARTMENTS",
+        "subtituloDepartamentos":"GET TO KNOW OUR AVAILABLE DEPARTMENTS",
+        "precio4":"Price: 1000$",
+        "ubicacion4":"Location: Sunny Islands",
+        "habitaciones4":"Bedrooms: 2",
+        "precio5":"Price: 1000$",
+        "ubicacion5":"Location: Sunny Islands",
+        "habitaciones5":"Bedrooms: 2",
+        "precio6":"Price: 1000$",
+        "ubicacion6":"Location: Sunny Islands",
+        "habitaciones6":"Bedrooms: 2",
+        "precio7":"Precio: 1000$",
+        "ubicacion7":"Ubicación: Sunny Islands",
+        "habitaciones7":"Habitaciones: 2",
+        "precio8":"Precio: 1000$",
+        "ubicacion8":"Ubicación: Sunny Islands",
+        "habitaciones8":"Habitaciones: 2",
+        "precio9":"Precio: 1000$",
+        "ubicacion9":"Ubicación: Sunny Islands",
+        "habitaciones9":"Habitaciones: 2",
+        "condominios":"Condominiums",
+        "filtro":"Filter",
+        "infoDepartamentos":"We have studios and 1 and 2 bedroom apartments, on the beach, in Sunny Isles Beach, Hollywood Beach and North Miami beach fully furnished and ready to spend a perfect vacation in front of the sea. Request your quote at the following numbers."
+    },
+
+
+
+    "transporte":{
+        "liInicio":"HOME",
+        "liDepartamentos":"DEPARTMENTS",
+        "liTransporte":"TRANSFERS",
+        "tituloTransporte":"TRANSFERS",
+        "tituloCotizador":"QUOTE YOUR TRIP",
+        "subtituloTransporte":"TRAVEL SAFELY AND COMFORTABLY WITH US",
+        "primerUbicacion":"Departure location",
+        "segundaUbicacion":"Arrival Point",
+        "tercerUbicacion":"Number of people",
+        "cuartaUbicacion":"Type of transfer",
+        "quintaUbicacion":"Departure time",
+        "cotiza":"QUOTE",
+        "continua":"CONTINUE",
+        "tipoDeViaje1":"One-way trip",
+        "tipoDeViaje2":"Round trip",
+        "aeropuerto":"Miami Airport",
+        "puerto":"Port of Miami",
+        "traslado1":"Transfer from/to Miami Beach - Miami Airport",
+        "traslado2":"Transfer from/to Miami Beach - Port of Miami",
+        "traslado3":"Transfer from/to Sunny Islands/Hollywood Beach - Miami Airport",
+        "porPersona":"Per person",
+        "reserva":"Book your trip"
+    },
+
+
+
+    "quienesSomos":{
+        "tituloQuienesSomos":"WHO WE ARE?",
+        "parrafoQuienesSomos":"We are a company dedicated to the sale of inbound and outbound tourism with 15 years of experience in the sale of tourist services internationally with offices in Miami and Buenos Aires <br>We are backed by more than 15 years in the tourism industry. <br>Our goal is to provide customers through our knowledge, experience and creativity with the best product for their trips.<br> We offer apartment rental, car rental, package sales, tailor-made itineraries, hotel reservations, excursions. <br> We have offices in Miami and Buenos Aires.",
+        "nuestroEquipo":"OUR TEAM",
+        "puesto1":"puesto",
+        "puesto2":"puesto",
+        "puesto3":"puesto",
+        "puesto4":"puesto",
+        "contactanos":"CONTACTANOS"
+    }
+}

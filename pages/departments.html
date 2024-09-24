@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body id="body" class="container1">  
+    <header  class="header">
+        <div class="logo">
+          <a href="../index.html">
+            <img class="imgLogo" src="../images/logoLomitas.png" alt="logo">
+          </a>
+        </div>
+        <label class="popup">
+          <input type="checkbox">
+          <div class="burger" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="popup-window">
+            <ul>
+              <li>
+                <button>
+                  <span><a data-section="transporte" data-value="liInicio" class="refwhite" href="../index.html">INICIO</a></span>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <span><a data-section="transporte" data-value="liDepartamentos" class="refwhite" href="../pages/departments.html">DEPARTAMENTOS</a></span>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <span><a data-section="transporte" data-value="liTransporte" class="refwhite" href="../pages/transport.html">TRASLADOS</a></span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </label>
+    </header>
+    <div  id="flags" class="flags falgsAlt">
+      <span data-section="inicio" data-value="languageSelector" class="flagsTitiulo">SELECTOR DE IDIOMA</span>
+      <div class="divFlags">
+        <div class="flagsItem" data-language="es">
+          <img class="flag" src="../images/es.avif" alt="bandera español">
+        </div>
+        <div class="flagsItem" data-language="en">
+          <img class="flag" src="../images/en.avif" alt=" bandera ingles">
+        </div>
+      </div>
+    </div>
+    <div  class="divH2Department">
+        <div class="departmentH2Div">
+          <h2 data-section="departamentos" data-value="tituloDepartamentos" class="transportH2">DEPARTAMENTOS</h2>
+          <h2 data-section="departamentos" data-value="subtituloDepartamentos" class="departmentsH2">CONOCE NUESTROS DEPARTAMENTOS DIPONIBLES</h2>
+        </div>
+    </div>
+    <div  id="loader" class="loader">
+      <div class="loader-inner">
+        <div class="loader-block"></div>
+        <div class="loader-block"></div>
+        <div class="loader-block"></div>
+        <div class="loader-block"></div>
+        <div class="loader-block"></div>
+        <div class="loader-block"></div>
+        <div class="loader-block"></div>
+        <div class="loader-block"></div>
+      </div>
+    </div>
+    <div  class="infodepartamentos">
+      <p data-section="departamentos" data-value="infoDepartamentos">Contamos con studios  y departamentos de 1 y 2 dormitorios, sobre la playa, en Sunny Isles beach , en Hollywood beach y north Miami beach totalmente amoblados y listos para pasar unas vacaciones perfectas frente al mar. Solicita tu cotizacion a los siguientes numeros</p>
+      <a href="https://wa.link/f7x9su">
+        <button class="buttonNumero"><svg class="svgAlt2" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"></path> <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"></path> <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse"> <stop stop-color="#5BD066"></stop> <stop offset="1" stop-color="#27B43E"></stop> </linearGradient> </defs> </g></svg> +5491154503003</button>
+      </a>
+      <a href="https://wa.link/7z2ggg">
+        <button class="buttonNumero"><svg class="svgAlt2" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"></path> <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"></path> <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse"> <stop stop-color="#5BD066"></stop> <stop offset="1" stop-color="#27B43E"></stop> </linearGradient> </defs> </g></svg> +5491152480671</button>
+      </a>
+      <a href="https://walink.co/75fde0">
+        <button class="buttonNumero"><svg class="svgAlt2" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"></path> <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"></path> <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse"> <stop stop-color="#5BD066"></stop> <stop offset="1" stop-color="#27B43E"></stop> </linearGradient> </defs> </g></svg> +13053361521</button>
+      </a>
+    </div>
+    <div  class="filtrosDepartamentos">
+      <div class="menu">
+        <div class="item">
+          <a href="javascript:void(0)" class="link">
+            <span data-section="departamentos" data-value="filtro"> Filtro </span>
+            <svg viewBox="0 0 360 360" xml:space="preserve">
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="XMLID_225_"
+                  d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <div class="submenu">
+            <div class="submenu-item">
+              <a id="filtroHB" href="javascript:void(0)" class="submenu-link"> Hollywood Beach </a>
+            </div>
+            <div class="submenu-item">
+              <a id="filtroSI" href="javascript:void(0)" class="submenu-link"> Sunny Isles </a>
+            </div>
+            <div class="submenu-item">
+              <a id="filtroNB" href="javascript:void(0)" class="submenu-link"> North Miami Beach </a>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="menu menu2">
+        <div class="item">
+          <a href="javascript:void(0)" class="link">
+            <span data-section="departamentos" data-value="condominios"> Condominios </span>
+            <svg viewBox="0 0 360 360" xml:space="preserve">
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="XMLID_225_"
+                  d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <div class="submenu">
+            <div class="submenu-item">
+              <a id="filtroTT" href="javascript:void(0)" class="submenu-link"> The Tides  </a>
+            </div>
+            <div class="submenu-item">
+              <a id="filtroOC" href="javascript:void(0)" class="submenu-link"> Ocean Reserve </a>
+            </div>
+            <div class="submenu-item">
+              <a id="filtroTP" href="javascript:void(0)" class="submenu-link"> Casablanca </a>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div class="condominios">
+      <div  id="TT">
+        <h3 class="h3TT">THE TIDES ON HOLLYWOOD</h3>
+        <div class="slider-frame3 sliderDepartamentos">
+          <ul class="ulCarousel">
+              <li><img class="imgCarouselTransport" src="../images/condominio2/TT1.jpg" alt="the tides 1"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio2/TT2.Jpeg" alt="the tides 2"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio2/TT3.png" alt="the tides 3"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio2/TT4.png" alt="the tides 4"></li>
+          </ul>
+        </div>
+        <img class="imgTT" src="../images/condominio2/TT5.png" alt="a">
+      </div>
+      <div  id="OC">
+        <h3 class="h3TT">OCEAN RESERVE CONDOMINIUM</h3>
+        <div class="slider-frame3 sliderDepartamentos">
+          <ul class="ulCarousel">
+              <li><img class="imgCarouselTransport" src="../images/condominio1/OC1.jpg" alt="ocean reserve 1"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio1/OC2.jpg" alt="ocean reserve 2"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio1/OC3.jpg" alt="ocean reserve 3"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio1/OC4.jpg" alt="ocean reserve 4"></li>
+          </ul>
+        </div>
+        <img class="imgTT" src="../images/condominio1/OC5.png" alt="s">
+      </div>
+      <div  id="TP">
+        <h3 class="h3TT">CASABLANCA</h3>
+        <div class="slider-frame3 sliderDepartamentos">
+          <ul class="ulCarousel">
+              <li><img class="imgCarouselTransport" src="../images/condominio3/CB1.jpg" alt="casablanca 1"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio3/CB2.jpg" alt="casablanca 2"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio3/CB3.jpg" alt="casasblanca 3"></li>
+              <li><img class="imgCarouselTransport" src="../images/condominio3/CB4.jpg" alt="casablanca 4"></li>
+          </ul>
+        </div>
+        <img class="imgTT" src="../images/condominio3/CB5.png" alt="d">
+      </div>
+    </div>
+    <div class="departmentsDiv">
+      <div  class="departmentItem" id="HB4">
+        <div class="carousel">
+          <ul class="slides">
+            <input type="radio" name="radio-buttons12" id="img-121" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="../images/departamento3B/dp3B1.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-123" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-122" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons12" id="img-122" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="../images/departamento3B/dp3B2.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-121" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-123" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons12" id="img-123" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="../images/departamento3B/dp3B3.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-122" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-124" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons12" id="img-124" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="../images/departamento3B/dp3B4.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-123" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-125" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons12" id="img-125" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="../images/departamento3B/dp3B5.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-124" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-126" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons12" id="img-126" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="../images/departamento3B/dp3B6.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-125" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-127" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons12" id="img-127" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="../images/departamento3B/dp3B7.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-126" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-128" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons12" id="img-128" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="../images/departamento3B/dp3B8.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-127" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-121" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <div class="carousel-dots">
+              <label for="img-121" class="carousel-dot" id="img-dot-121"></label>
+              <label for="img-122" class="carousel-dot" id="img-dot-122"></label>
+              <label for="img-123" class="carousel-dot" id="img-dot-123"></label>
+              <label for="img-124" class="carousel-dot" id="img-dot-124"></label>
+              <label for="img-125" class="carousel-dot" id="img-dot-125"></label>
+              <label for="img-126" class="carousel-dot" id="img-dot-126"></label>
+              <label for="img-127" class="carousel-dot" id="img-dot-127"></label>
+              <label for="img-128" class="carousel-dot" id="img-dot-128"></label>
+
+            </div>
+          </ul>
+        </div>
+          <div class="departmentList">
+            <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+            <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion2">Lugar: Hollywood Beach</p></span>
+            <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo2">Tipo: Studio</p></span>
+            <div class="divBotonDepartamento">
+              <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+              </a>
+            </div>
+          </div>
+      </div>
+      <div  class="departmentItem" id="SI">
+        <div>
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons3" id="img-31" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento4/dpC1.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-33" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-32" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons3" id="img-32" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento4/dpC2.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-31" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-33" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons3" id="img-33" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento4/dpC3.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-32" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-34" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons3" id="img-34" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento4/dpC4.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-33" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-35" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons3" id="img-35" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento4/dpC5.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-34" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-36" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons3" id="img-36" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento4/dpC6.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-35" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-37" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons3" id="img-37" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento4/dpC7.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-36" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-38" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons3" id="img-38" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento4/dpC8.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-37" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-31" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-31" class="carousel-dot" id="img-dot-31"></label>
+                <label for="img-32" class="carousel-dot" id="img-dot-32"></label>
+                <label for="img-33" class="carousel-dot" id="img-dot-33"></label>
+                <label for="img-34" class="carousel-dot" id="img-dot-34"></label>
+                <label for="img-35" class="carousel-dot" id="img-dot-35"></label>
+                <label for="img-36" class="carousel-dot" id="img-dot-36"></label>
+                <label for="img-37" class="carousel-dot" id="img-dot-37"></label>
+                <label for="img-38" class="carousel-dot" id="img-dot-38"></label>
+
+              </div>
+            </ul>
+          </div>
+        </div>
+          <div class="departmentList">
+              <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion4">Lugar: Sunny Isles</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo2">Tipo: Studio</p></span>
+              <div class="divBotonDepartamento">
+                <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                  <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div  class="departmentItem" id="SI1">
+        <div>
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons4" id="img-41" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento5/dpD1.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-43" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-42" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons4" id="img-42" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento5/dpD2.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-41" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-43" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons4" id="img-43" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento5/dpD3.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-42" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-44" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons4" id="img-44" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento5/dpD4.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-43" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-45" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons4" id="img-45" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento5/dpD5.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-44" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-46" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons4" id="img-46" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento5/dpD6.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-45" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-47" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons4" id="img-47" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento5/dpD7.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-46" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-48" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons4" id="img-48" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento5/dpD4.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-47" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-41" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-41" class="carousel-dot" id="img-dot-41"></label>
+                <label for="img-42" class="carousel-dot" id="img-dot-42"></label>
+                <label for="img-43" class="carousel-dot" id="img-dot-43"></label>
+                <label for="img-44" class="carousel-dot" id="img-dot-44"></label>
+                <label for="img-45" class="carousel-dot" id="img-dot-45"></label>
+                <label for="img-46" class="carousel-dot" id="img-dot-46"></label>
+                <label for="img-47" class="carousel-dot" id="img-dot-47"></label>
+                <label for="img-48" class="carousel-dot" id="img-dot-48"></label>
+
+              </div>
+            </ul>
+          </div>
+        </div>
+          <div class="departmentList">
+              <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion5">Lugar: Sunny Isles</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo2">Tipo: Studio</p></span>
+              <div class="divBotonDepartamento">
+                <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                  <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div  class="departmentItem" id="SI2">
+        <div>
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons5" id="img-51" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento6/dpE1.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-53" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-52" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons5" id="img-52" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento6/dpE2.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-51" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-53" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons5" id="img-53" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento6/dpE3.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-52" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-54" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons5" id="img-54" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento6/dpE4.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-53" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-55" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons5" id="img-55" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento6/dpE5.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-54" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-56" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons5" id="img-56" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento6/dpE6.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-55" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-57" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons5" id="img-57" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento6/dpE7.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-56" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-58" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons5" id="img-58" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento6/dpE8.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-57" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-51" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-61" class="carousel-dot" id="img-dot-51"></label>
+                <label for="img-62" class="carousel-dot" id="img-dot-52"></label>
+                <label for="img-63" class="carousel-dot" id="img-dot-53"></label>
+                <label for="img-64" class="carousel-dot" id="img-dot-54"></label>
+                <label for="img-65" class="carousel-dot" id="img-dot-55"></label>
+                <label for="img-66" class="carousel-dot" id="img-dot-56"></label>
+                <label for="img-67" class="carousel-dot" id="img-dot-57"></label>
+                <label for="img-68" class="carousel-dot" id="img-dot-58"></label>
+
+              </div>
+            </ul>
+          </div>
+        </div>
+          <div class="departmentList">
+              <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion6">Lugar: Sunny Isles</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo2">Tipo: Studio</p></span>
+              <div class="divBotonDepartamento">
+                <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                  <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div  class="departmentItem" id="NB1">
+        <div>
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons6" id="img-61" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento7/dpF1.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-63" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-62" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons6" id="img-62" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento7/dpF2.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-61" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-63" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons6" id="img-63" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento7/dpF3.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-62" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-64" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons6" id="img-64" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento7/dpF4.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-63" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-65" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons6" id="img-65" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento7/dpF5.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-64" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-66" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons6" id="img-66" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento7/dpF6.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-65" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-67" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons6" id="img-67" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento7/dpF7.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-66" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-68" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons6" id="img-68" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento7/dpF8.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-67" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-61" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-61" class="carousel-dot" id="img-dot-61"></label>
+                <label for="img-62" class="carousel-dot" id="img-dot-62"></label>
+                <label for="img-63" class="carousel-dot" id="img-dot-63"></label>
+                <label for="img-64" class="carousel-dot" id="img-dot-64"></label>
+                <label for="img-65" class="carousel-dot" id="img-dot-65"></label>
+                <label for="img-66" class="carousel-dot" id="img-dot-66"></label>
+                <label for="img-67" class="carousel-dot" id="img-dot-67"></label>
+                <label for="img-68" class="carousel-dot" id="img-dot-68"></label>
+
+              </div>
+            </ul>
+          </div>
+        </div>
+          <div class="departmentList">
+              <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion6">Lugar: Sunny Isles</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo2">Tipo: Studio</p></span>
+              <div class="divBotonDepartamento">
+                <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                  <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div  class="departmentItem" id="NB2">
+        <div>
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons7" id="img-71" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento8/dpG1.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-73" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-72" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons7" id="img-72" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento8/dpG2.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-71" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-73" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons7" id="img-73" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento8/dpG3.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-72" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-74" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons7" id="img-74" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento8/dpG4.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-73" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-75" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons7" id="img-75" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento8/dpG5.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-74" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-76" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons7" id="img-76" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento8/dpG6.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-75" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-77" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons7" id="img-77" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento8/dpG7.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-76" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-78" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons7" id="img-78" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento8/dpG8.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-77" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-71" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-71" class="carousel-dot" id="img-dot-71"></label>
+                <label for="img-72" class="carousel-dot" id="img-dot-72"></label>
+                <label for="img-73" class="carousel-dot" id="img-dot-73"></label>
+                <label for="img-74" class="carousel-dot" id="img-dot-74"></label>
+                <label for="img-75" class="carousel-dot" id="img-dot-75"></label>
+                <label for="img-76" class="carousel-dot" id="img-dot-76"></label>
+                <label for="img-77" class="carousel-dot" id="img-dot-77"></label>
+                <label for="img-78" class="carousel-dot" id="img-dot-78"></label>
+
+              </div>
+            </ul>
+          </div>
+        </div>
+          <div class="departmentList">
+              <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion6">Lugar: Sunny Isles</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo2">Tipo: Studio</p></span>
+              <div class="divBotonDepartamento">
+                <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                  <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div  class="departmentItem" id="HB">
+          <div>
+            <div class="carousel">
+              <ul class="slides">
+                <input type="radio" name="radio-buttons" id="img-1" checked />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="../images/departamentoPH/ph1.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-2" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-2" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="../images/departamentoPH/ph2.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-1" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-3" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-3" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="../images/departamentoPH/ph3.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-2" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-4" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-4" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="../images/departamentoPH/ph31.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-5" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-5" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="../images/departamentoPH/ph4.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-4" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-6" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-6" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="../images/departamentoPH/ph5.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-5" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-7" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-7" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="../images/departamentoPH/ph6.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-6" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-8" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-8" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="../images/departamentoPH/ph8.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-7" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-1" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <div class="carousel-dots">
+                  <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                  <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                  <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                  <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+                  <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+                  <label for="img-6" class="carousel-dot" id="img-dot-6"></label>
+                  <label for="img-7" class="carousel-dot" id="img-dot-7"></label>
+                  <label for="img-8" class="carousel-dot" id="img-dot-8"></label>
+
+                </div>
+              </ul>
+            </div>
+          </div>
+            <div class="departmentList">
+                <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+                <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion1">Lugar: Hollywood Beach</p></span>
+                <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo1">Tipo: Departamento</p></span>
+                <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bed"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M22 17v-3h-20" /><path d="M2 8v9" /><path d="M12 14h10v-2a3 3 0 0 0 -3 -3h-7v5z" /></svg> <p data-section="departamentos" data-value="habitaciones1">Habitaciones: 1</p></span>
+                <div class="divBotonDepartamento">
+                  <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                    <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+                  </a>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <div  class="departmentItem" id="HB1">
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons1" id="img-11" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento2/dpA1.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-13" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-12" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons1" id="img-12" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento2/dpA2.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-11" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-13" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons1" id="img-13" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento2/dpA3.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-12" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-14" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons1" id="img-14" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento2/dpA4.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-13" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-15" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons1" id="img-15" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento2/dpA5.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-14" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-16" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons1" id="img-16" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento2/dpA6.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-15" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-17" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons1" id="img-17" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento2/dpA7.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-16" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-18" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons1" id="img-18" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento2/dpA8.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-17" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-11" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-11" class="carousel-dot" id="img-dot-11"></label>
+                <label for="img-12" class="carousel-dot" id="img-dot-12"></label>
+                <label for="img-13" class="carousel-dot" id="img-dot-13"></label>
+                <label for="img-14" class="carousel-dot" id="img-dot-14"></label>
+                <label for="img-15" class="carousel-dot" id="img-dot-15"></label>
+                <label for="img-16" class="carousel-dot" id="img-dot-16"></label>
+                <label for="img-17" class="carousel-dot" id="img-dot-17"></label>
+                <label for="img-18" class="carousel-dot" id="img-dot-18"></label>
+
+              </div>
+            </ul>
+          </div>
+            <div class="departmentList">
+              <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion2">Lugar: Hollywood Beach</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo1">Tipo: Departamento</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bed"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M22 17v-3h-20" /><path d="M2 8v9" /><path d="M12 14h10v-2a3 3 0 0 0 -3 -3h-7v5z" /></svg> <p data-section="departamentos" data-value="habitaciones2">Habitaciones: 1</p></span>
+              <div class="divBotonDepartamento">
+                <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                  <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div  class="departmentItem" id="HB2">
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons2" id="img-21" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento3/dpB1.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-23" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-22" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons2" id="img-22" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento3/dpB2.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-21" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-23" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons2" id="img-23" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento3/dpB3.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-22" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-24" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons2" id="img-24" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento3/dpB4.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-23" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-25" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons2" id="img-25" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento3/dpB5.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-24" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-26" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons2" id="img-26" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento3/dpB6.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-25" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-27" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons2" id="img-27" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento3/dpB7.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-26" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-28" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons2" id="img-28" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="../images/departamento3/dpB8.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-27" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-21" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-21" class="carousel-dot" id="img-dot-21"></label>
+                <label for="img-22" class="carousel-dot" id="img-dot-22"></label>
+                <label for="img-23" class="carousel-dot" id="img-dot-23"></label>
+                <label for="img-24" class="carousel-dot" id="img-dot-24"></label>
+                <label for="img-25" class="carousel-dot" id="img-dot-25"></label>
+                <label for="img-26" class="carousel-dot" id="img-dot-26"></label>
+                <label for="img-27" class="carousel-dot" id="img-dot-27"></label>
+                <label for="img-28" class="carousel-dot" id="img-dot-28"></label>
+
+              </div>
+            </ul>
+          </div>
+            <div class="departmentList">
+              <span class="departmentText descriptionDeparment"><p data-section="departamentos" data-value="descripcion1">Descubre tu escape alojamiento en Miami Beach: Ofrecemos elegantes departamentos frente al mar para renta vacacional. Elige entre cómodos estudios y amplios apartamentos de 1 y 2 habitaciones, todos completamente amueblados y listos para brindarte una estancia inolvidable. Disfruta de impresionantes vistas al océano, acceso directo a la playa y una ubicación inmejorable para explorar la vibrante vida costera. Ideal para unas vacaciones relajantes con todo el confort y estilo que mereces. Pedinos tu cotizacion que te aseramos.</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-navigation"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" /></svg><p data-section="departamentos" data-value="ubicacion2">Lugar: Hollywood Beach</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg><p data-section="departamentos" data-value="tipo1">Tipo: Departamento</p></span>
+              <span class="departmentText"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bed"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M22 17v-3h-20" /><path d="M2 8v9" /><path d="M12 14h10v-2a3 3 0 0 0 -3 -3h-7v5z" /></svg> <p data-section="departamentos" data-value="habitaciones2">Habitaciones: 1</p></span>
+              <div class="divBotonDepartamento">
+                <a class="aBotonDepartamento" href="https://walink.co/75fde0">
+                  <span class="botonDepartamentoSpan">CONSULTAR DISPONIBILIDAD</span>
+                </a>
+              </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../script2.js"></script>
+  </body>
+</html>
