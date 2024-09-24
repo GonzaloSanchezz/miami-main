@@ -1610,7 +1610,6 @@ select{
   margin-top: 100px;
   width: 90%;
   opacity: 90%;
-  display: block;
 }
 @media(max-width:900px){
   .popup{
