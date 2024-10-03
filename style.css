@@ -1611,6 +1611,16 @@ select{
   width: 90%;
   opacity: 90%;
 }
+.sliderWalt{
+  margin-top: 15px;
+}
+.divDisney2{
+  height: 1000px;
+}
+
+.divDisney2 p{
+  margin-bottom: 30px;
+}
 @media(max-width:900px){
   .popup{
       display: block;
@@ -1656,6 +1666,9 @@ select{
   }
   .divDisney{
     height: 600px;
+  }
+  .divDisney2{
+    height: 1000px;
   }
   .imgViajes{
     width: 450px;
