@@ -4,7 +4,8 @@
         "subtituloInicio": "DONDE LOS SUEÑOS SE HACEN REALIDAD",
         "languageSelector": "SELECTOR DE IDIOMA",
         "selectorDepartamentos":"DEPARTAMENTOS",
-        "selectorTransporte":"TRASLADOS"
+        "selectorTransporte":"TRASLADOS",
+        "selectorDisney":"DESTINOS DISNEY"
     },
     "departamentos":{
         "tipo1":"Tipo: Departamento",
@@ -22,23 +23,23 @@
         "tituloDepartamentos":"DEPARTAMENTOS",
         "subtituloDepartamentos":"CONOCE NUESTROS DEPARTAMENTOS DIPONIBLES",
         "precio4":"Precio: 1000$",
-        "ubicacion4":"Ubicación: Sunny Islands",
+        "ubicacion4":"Ubicación: Sunny Isles",
         "habitaciones4":"Habitaciones: 2",
         "precio5":"Precio: 1000$",
-        "ubicacion5":"Ubicación: Sunny Islands",
+        "ubicacion5":"Ubicación: Sunny Isles",
         "habitaciones5":"Habitaciones: 2",
         "precio6":"Precio: 1000$",
-        "ubicacion6":"Ubicación: Sunny Islands",
+        "ubicacion6":"Ubicación: Sunny Isles",
         "habitaciones6":"Habitaciones: 2",
         "precio7":"Precio: 1000$",
-        "ubicacion7":"Ubicación: Sunny Islands",
+        "ubicacion7":"Ubicación: Sunny Isles",
         "habitaciones7":"Habitaciones: 2",
         "precio8":"Precio: 1000$",
-        "ubicacion8":"Ubicación: Sunny Islands",
+        "ubicacion8":"Ubicación: Sunny Isles",
         "habitaciones8":"Habitaciones: 2",
 
         "precio9":"Precio: 1000$",
-        "ubicacion9":"Ubicación: Sunny Islands",
+        "ubicacion9":"Ubicación: Sunny Isles",
         "habitaciones9":"Habitaciones: 2",
         "condominios":"Condominios",
         "filtro":"Filtro",
@@ -48,6 +49,7 @@
         "liInicio":"INICIO",
         "liDepartamentos":"DEPARTAMENTOS",
         "liTransporte":"TRASLADOS",
+        "liDisney":"DESTINOS DISNEY",
         "tituloTransporte":"TRASLADOS",
         "subtituloTransporte":"VIAJA SEGURO Y CÓMODO CON NOSOTROS",
         "tituloCotizador":"COTIZÁ TU VIAJE",
@@ -64,7 +66,7 @@
         "puerto":"Puerto de Miami",
         "traslado1":"Traslado desde/hacia Miami Beach - Aeropuerto de Miami",
         "traslado2":"Traslado desde/hacia Miami Beach - Puerto de Miami",
-        "traslado3":"Traslado desde/hacia Sunny Islands/Hollywood Beach - Aeropuerto de Miami",
+        "traslado3":"Traslado desde/hacia Sunny Isles/Hollywood Beach - Aeropuerto de Miami",
         "porPersona":"Por persona",
         "reserva":"Reservá tu viaje"
     },
@@ -72,11 +74,21 @@
         "tituloQuienesSomos":"¿QUIÉNES SOMOS?",
         "parrafoQuienesSomos":"Somos una empresa dedicado a la venta de turismo receptivo y emisivo con 15 años de experiencia en la venta de servicios turísticos a nivel internacional con oficinas en Miami y Buenos Aires. <br> Nos avalan  mas de 15 años en la industria del turismo. <br> Nuestro objetivo es brindarle a los clientes a través de nuestros conocimientos, experiencia y creatividad el mejor producto para sus viajes. <br> Ofrecemos alquiler de departamentos, autos, venta de paquetes, armado a medida de itinerarios, reservas hoteleras, excursiones. <br> We have offices in Miami and Buenos Aires.",
         "nuestroEquipo":"NUESTRO EQUIPO",
-        "puesto1":"puesto",
-        "puesto2":"puesto",
-        "puesto3":"puesto",
-        "puesto4":"puesto",
+        "puesto1":"DIRECTORA GENERAL",
+        "puesto2":"GERENTE DE MARKETING",
+        "puesto3":"GERENTE DE VENTAS",
         "contactanos":"CONTACTANOS"
+    },
+    "disney":{
+        "tituloDisney":"DESTINOS DISNEY",
+        "h2Disney":"Preparate para el viaje mas encantador lleno de magia y diversión.",
+        "h3Disney":"Te ayudamos a planificar tu viaje a Disney y Universal . Reservamos tu hotel, admisiones y cruceros.",
+        "p1Disney":"WALT DISNEY WORLD RESORT",
+        "p2Disney":"LINEA DE CRUCEROS DISNEY",
+        "p3Disney":"UNIVERSAL ORLANDO RESORT",
+        "span1Disney":"Ubicado en las afueras de Orlando, Florida, ofrece cuatro parques temáticos icónicos, dos parques acuáticos, 32 hoteles tipo resort, más de 200 restaurantes, un complejo de compras, restaurantes y entretenimiento al aire libre, cuatro campos de golf galardonados, un complejo deportivo y muchos otros lugares recreativos.",
+        "span2Disney":"Disney Cruise Line ofrece una variedad de itinerarios a algunos de los destinos más impresionantes del mundo. Desde el Caribe hasta Alaska, desde el Mediterráneo hasta Noruega, los visitantes pueden explorar el mundo mientras reciben la famosa hospitalidad de clase mundial de Disney.",
+        "span3Disney":"Tres increíbles parques temáticos de Universal Orlando Resort: Universal Studios Florida, Universal's Islands of Adventure y Universal's Volcano Bay, disfruta de hoteles espectaculares y mucho más."
     }
 }
 

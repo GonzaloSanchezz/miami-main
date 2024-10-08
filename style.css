@@ -398,7 +398,7 @@
     transition: var(--burger-transition);
     margin-top: 0px;
     width: 120px;
-    height: 77px;
+    height: 100px;
     z-index: 100;
     position: absolute;
     top: 0px;
